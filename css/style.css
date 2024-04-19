@@ -126,11 +126,13 @@ footer {
 }
 
 footer .social i {
+    text-align: left;
     font-size: 2rem;
     margin: 0 10px;
 }
 
 footer p {
+    text-align: left;
     font-size: 1rem;
 }
 
