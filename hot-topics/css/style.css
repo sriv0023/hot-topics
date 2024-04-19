@@ -1,0 +1,203 @@
+body {
+    font-family: 'EB Garamond', serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f8f8f8;
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    font-size: 4rem;
+    padding-left: 4rem;
+}
+
+nav {
+    display: flex;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    justify-content: left;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    padding-top: 2rem;
+    padding-left: 4rem;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.masthead {
+    height: 13rem;
+    color: white;
+    font-size: 5rem; 
+    font-weight: 600;
+    text-align: center;
+    background-image: url('/img/mast-head.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-content {
+    max-width: 65rem;
+    margin: auto;
+}
+
+.main-content h2 {
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+.main-content article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.main-content figure {
+    float: left;
+    width: 20rem;
+    margin-right: 2rem;
+    margin-left: 1rem;
+}
+
+.main-content img {
+    width: 100%;
+    height: auto;
+}
+
+.main-content figcaption {
+    font-style: italic;
+    text-align: center;
+}
+
+.main-content p {
+    text-align: justify;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80rem;
+    margin: auto;
+}
+
+.card {
+    width: calc(33% - 50px);
+    margin: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .social i {
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+@media (max-width: 35rem) {
+    .main-content figure,
+    .main-content img {
+        float: none;
+        width: auto;
+        margin: 0 auto;
+        display: block;
+    }
+    .main-content img {
+        width: 400px;
+    }
+
+    .masthead {
+        height: 13rem;
+        color: white;
+        font-size: 2.8rem; 
+        font-weight: 600;
+        padding: 2rem;
+        text-align: center;
+        background-image: url('/img/mast-head.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        align-items: center;
+        justify-content: center;
+        display: block;
+        margin-bottom: 0.5rem;
+        margin-left: 1rem;
+    }
+
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 400px;
+    }
+}
+
+@media (min-width: 35rem) and (max-width: 42rem) {
+    .main-content article,
+    .main-content figure,
+    .main-content img {
+        float: none;
+        width: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .cards .card {
+        width: calc(50% - 20px);
+    }
+
+    nav ul li a {
+        padding: 0.5rem 1rem;
+    }
+}
